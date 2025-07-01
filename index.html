@@ -1,0 +1,1226 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_e097e3933e49e9119e2a976d9ec0f928 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_e097e3933e49e9119e2a976d9ec0f928" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_e097e3933e49e9119e2a976d9ec0f928 = L.map(
+                "map_e097e3933e49e9119e2a976d9ec0f928",
+                {
+                    center: [-2.5, 118.0],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 5,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_6feffdcf572befaa8d58edd018b2e3df = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_6feffdcf572befaa8d58edd018b2e3df.addTo(map_e097e3933e49e9119e2a976d9ec0f928);
+        
+    
+            var marker_cluster_1cbd6324cde533d3e1d47a565b5fb84d = L.markerClusterGroup(
+                {
+}
+            );
+        
+    
+            var marker_d76524420a9b783f53dd902d61b77590 = L.marker(
+                [3.616, 98.78],
+                {
+}
+            ).addTo(marker_cluster_1cbd6324cde533d3e1d47a565b5fb84d);
+        
+    
+            var icon_fcbd34f9e8ff51614610f7fcaa977189 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_729d399510eb8e55e948daef355d1923 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_b4d4babb8b803b8edc6ab27bf8500f0b = $(`<div id="html_b4d4babb8b803b8edc6ab27bf8500f0b" style="width: 100.0%; height: 100.0%;">         <b>NO STASIUN:</b> 50019<br>         <b>DESA:</b> Sampali<br>         <b>KECAMATAN:</b> Percut Sei Tuan<br>         <b>KAB/KOTA:</b> Deli Serdang<br>         <b>PROVINSI:</b> Sumatera Utara     </div>`)[0];
+                popup_729d399510eb8e55e948daef355d1923.setContent(html_b4d4babb8b803b8edc6ab27bf8500f0b);
+            
+        
+
+        marker_d76524420a9b783f53dd902d61b77590.bindPopup(popup_729d399510eb8e55e948daef355d1923)
+        ;
+
+        
+    
+    
+                marker_d76524420a9b783f53dd902d61b77590.setIcon(icon_fcbd34f9e8ff51614610f7fcaa977189);
+            
+    
+            var marker_389d5cdfddc651947275a9818d2aaee8 = L.marker(
+                [-0.55, 100.37],
+                {
+}
+            ).addTo(marker_cluster_1cbd6324cde533d3e1d47a565b5fb84d);
+        
+    
+            var icon_3061d48011e1d6be1d1c969d9d479810 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_6f48b629b20f2d989ec8c09ad7a1da7b = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_82808144de3bb89d4816c89dc89b2bb3 = $(`<div id="html_82808144de3bb89d4816c89dc89b2bb3" style="width: 100.0%; height: 100.0%;">         <b>NO STASIUN:</b> 50002<br>         <b>DESA:</b> 2x11 Kayutanam<br>         <b>KECAMATAN:</b> Balai Kamih<br>         <b>KAB/KOTA:</b> Padang Pariaman<br>         <b>PROVINSI:</b> Sumatera Barat     </div>`)[0];
+                popup_6f48b629b20f2d989ec8c09ad7a1da7b.setContent(html_82808144de3bb89d4816c89dc89b2bb3);
+            
+        
+
+        marker_389d5cdfddc651947275a9818d2aaee8.bindPopup(popup_6f48b629b20f2d989ec8c09ad7a1da7b)
+        ;
+
+        
+    
+    
+                marker_389d5cdfddc651947275a9818d2aaee8.setIcon(icon_3061d48011e1d6be1d1c969d9d479810);
+            
+    
+            var marker_0e273ea808b572ce1c695caa5f47a630 = L.marker(
+                [5.403587, 95.46497],
+                {
+}
+            ).addTo(marker_cluster_1cbd6324cde533d3e1d47a565b5fb84d);
+        
+    
+            var icon_3b81957946065bc459e4a06bae89c4c9 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_1820e9e81cb7e3e80d0dae8761a0fbfb = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ca4df13ee0f9340d4506798534384217 = $(`<div id="html_ca4df13ee0f9340d4506798534384217" style="width: 100.0%; height: 100.0%;">         <b>NO STASIUN:</b> 50006<br>         <b>DESA:</b> Indrapuri<br>         <b>KECAMATAN:</b> Indrapuri<br>         <b>KAB/KOTA:</b> Aceh Besar<br>         <b>PROVINSI:</b> Aceh     </div>`)[0];
+                popup_1820e9e81cb7e3e80d0dae8761a0fbfb.setContent(html_ca4df13ee0f9340d4506798534384217);
+            
+        
+
+        marker_0e273ea808b572ce1c695caa5f47a630.bindPopup(popup_1820e9e81cb7e3e80d0dae8761a0fbfb)
+        ;
+
+        
+    
+    
+                marker_0e273ea808b572ce1c695caa5f47a630.setIcon(icon_3b81957946065bc459e4a06bae89c4c9);
+            
+    
+            var marker_fd2560b7c30012fa5eeb8227f2be8686 = L.marker(
+                [0.407528, 101.21725],
+                {
+}
+            ).addTo(marker_cluster_1cbd6324cde533d3e1d47a565b5fb84d);
+        
+    
+            var icon_31840c05544c95d31e21abe75efad543 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_61fcd30f0a1322ebce50e00e70b1a915 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_0ed298a3a9ff77f3e77ca39f1ecd1cf7 = $(`<div id="html_0ed298a3a9ff77f3e77ca39f1ecd1cf7" style="width: 100.0%; height: 100.0%;">         <b>NO STASIUN:</b> 50015<br>         <b>DESA:</b> Kuapan<br>         <b>KECAMATAN:</b> Tambang<br>         <b>KAB/KOTA:</b> Kampar<br>         <b>PROVINSI:</b> Riau     </div>`)[0];
+                popup_61fcd30f0a1322ebce50e00e70b1a915.setContent(html_0ed298a3a9ff77f3e77ca39f1ecd1cf7);
+            
+        
+
+        marker_fd2560b7c30012fa5eeb8227f2be8686.bindPopup(popup_61fcd30f0a1322ebce50e00e70b1a915)
+        ;
+
+        
+    
+    
+                marker_fd2560b7c30012fa5eeb8227f2be8686.setIcon(icon_31840c05544c95d31e21abe75efad543);
+            
+    
+            var marker_5d583365cd56491d9a209e754e23c7a7 = L.marker(
+                [-6.553259, 106.7428],
+                {
+}
+            ).addTo(marker_cluster_1cbd6324cde533d3e1d47a565b5fb84d);
+        
+    
+            var icon_6d278287f9e6fed248bf8ef452a3383f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_883afac109b0cf83da85a842ac1e3ad7 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_158f5cda0b446578265f8e9ca4364ae6 = $(`<div id="html_158f5cda0b446578265f8e9ca4364ae6" style="width: 100.0%; height: 100.0%;">         <b>NO STASIUN:</b> 50016<br>         <b>DESA:</b> Situgede<br>         <b>KECAMATAN:</b> Bogor Barat<br>         <b>KAB/KOTA:</b> Kota Bogor<br>         <b>PROVINSI:</b> Jawa Barat     </div>`)[0];
+                popup_883afac109b0cf83da85a842ac1e3ad7.setContent(html_158f5cda0b446578265f8e9ca4364ae6);
+            
+        
+
+        marker_5d583365cd56491d9a209e754e23c7a7.bindPopup(popup_883afac109b0cf83da85a842ac1e3ad7)
+        ;
+
+        
+    
+    
+                marker_5d583365cd56491d9a209e754e23c7a7.setIcon(icon_6d278287f9e6fed248bf8ef452a3383f);
+            
+    
+            var marker_d11526a5f7f9699a4196cc40e2126323 = L.marker(
+                [-6.9841, 110.381],
+                {
+}
+            ).addTo(marker_cluster_1cbd6324cde533d3e1d47a565b5fb84d);
+        
+    
+            var icon_28ec1ed43f0b8912b77afd9954267967 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkred",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a18e31020f19e7dcb180b8cbd4a07904 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_881b50c274c9764826d2da3d5ab1305f = $(`<div id="html_881b50c274c9764826d2da3d5ab1305f" style="width: 100.0%; height: 100.0%;">         <b>NO STASIUN:</b> 50003<br>         <b>DESA:</b> Kalibanteng Kulon<br>         <b>KECAMATAN:</b> Semarang Barat<br>         <b>KAB/KOTA:</b> Kota Semarang<br>         <b>PROVINSI:</b> Jawa Tengah     </div>`)[0];
+                popup_a18e31020f19e7dcb180b8cbd4a07904.setContent(html_881b50c274c9764826d2da3d5ab1305f);
+            
+        
+
+        marker_d11526a5f7f9699a4196cc40e2126323.bindPopup(popup_a18e31020f19e7dcb180b8cbd4a07904)
+        ;
+
+        
+    
+    
+                marker_d11526a5f7f9699a4196cc40e2126323.setIcon(icon_28ec1ed43f0b8912b77afd9954267967);
+            
+    
+            var marker_4a682e24afd5d00d257823c79017b9b8 = L.marker(
+                [-2.92731, 104.77194],
+                {
+}
+            ).addTo(marker_cluster_1cbd6324cde533d3e1d47a565b5fb84d);
+        
+    
+            var icon_324766a24bced23b6dfbbfa5e7f0be44 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "lightred",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_024ca4149213650aa317f60be7ea0298 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_62c2a78ec42128140d0a4dd2e26b4868 = $(`<div id="html_62c2a78ec42128140d0a4dd2e26b4868" style="width: 100.0%; height: 100.0%;">         <b>NO STASIUN:</b> STI1007<br>         <b>DESA:</b> Sukamaju<br>         <b>KECAMATAN:</b> Sako<br>         <b>KAB/KOTA:</b> Kota Palembang<br>         <b>PROVINSI:</b> Sumatera Selatan     </div>`)[0];
+                popup_024ca4149213650aa317f60be7ea0298.setContent(html_62c2a78ec42128140d0a4dd2e26b4868);
+            
+        
+
+        marker_4a682e24afd5d00d257823c79017b9b8.bindPopup(popup_024ca4149213650aa317f60be7ea0298)
+        ;
+
+        
+    
+    
+                marker_4a682e24afd5d00d257823c79017b9b8.setIcon(icon_324766a24bced23b6dfbbfa5e7f0be44);
+            
+    
+            var marker_45c336dafd91eed0a7a4b715d3a322f9 = L.marker(
+                [-3.864852, 102.312128],
+                {
+}
+            ).addTo(marker_cluster_1cbd6324cde533d3e1d47a565b5fb84d);
+        
+    
+            var icon_2942a4080c02cde5521b6c153f825227 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "beige",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d1fd13c585650d2ffd51dd6b513896a5 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_e81e84109695fc7ca4e15e463301c7f4 = $(`<div id="html_e81e84109695fc7ca4e15e463301c7f4" style="width: 100.0%; height: 100.0%;">         <b>NO STASIUN:</b> 50018<br>         <b>DESA:</b> Kandang<br>         <b>KECAMATAN:</b> Kampung Melayu<br>         <b>KAB/KOTA:</b> Kota Bengkulu<br>         <b>PROVINSI:</b> Bengkulu     </div>`)[0];
+                popup_d1fd13c585650d2ffd51dd6b513896a5.setContent(html_e81e84109695fc7ca4e15e463301c7f4);
+            
+        
+
+        marker_45c336dafd91eed0a7a4b715d3a322f9.bindPopup(popup_d1fd13c585650d2ffd51dd6b513896a5)
+        ;
+
+        
+    
+    
+                marker_45c336dafd91eed0a7a4b715d3a322f9.setIcon(icon_2942a4080c02cde5521b6c153f825227);
+            
+    
+            var marker_d5c9ae6f62063f2cb94d78755fa7749e = L.marker(
+                [-0.07489, 109.1905],
+                {
+}
+            ).addTo(marker_cluster_1cbd6324cde533d3e1d47a565b5fb84d);
+        
+    
+            var icon_d132ba1a84aafc8818e19baf2f7a0577 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkblue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0ef031bb1502516dde39d5043b2ba5a4 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_a4ffa161ccfa5e04fa99882cf1b38d14 = $(`<div id="html_a4ffa161ccfa5e04fa99882cf1b38d14" style="width: 100.0%; height: 100.0%;">         <b>NO STASIUN:</b> STI1003<br>         <b>DESA:</b> Sungai Nipah<br>         <b>KECAMATAN:</b> Siantan<br>         <b>KAB/KOTA:</b> Mempawah<br>         <b>PROVINSI:</b> Kalimantan Barat     </div>`)[0];
+                popup_0ef031bb1502516dde39d5043b2ba5a4.setContent(html_a4ffa161ccfa5e04fa99882cf1b38d14);
+            
+        
+
+        marker_d5c9ae6f62063f2cb94d78755fa7749e.bindPopup(popup_0ef031bb1502516dde39d5043b2ba5a4)
+        ;
+
+        
+    
+    
+                marker_d5c9ae6f62063f2cb94d78755fa7749e.setIcon(icon_d132ba1a84aafc8818e19baf2f7a0577);
+            
+    
+            var marker_046c454c85ad880f8255777a7522de22 = L.marker(
+                [-6.25, 106.76],
+                {
+}
+            ).addTo(marker_cluster_1cbd6324cde533d3e1d47a565b5fb84d);
+        
+    
+            var icon_9210399e689862cceb0ef0a5aec5ec77 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkgreen",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3f27eebc160cd0f007477f6a26d5ef1d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_437931d76b242404917b05444e505a57 = $(`<div id="html_437931d76b242404917b05444e505a57" style="width: 100.0%; height: 100.0%;">         <b>NO STASIUN:</b> 50010<br>         <b>DESA:</b> Pondok Betung<br>         <b>KECAMATAN:</b> Pondok Aren<br>         <b>KAB/KOTA:</b> Kota Tangerang Selatan<br>         <b>PROVINSI:</b> Banten     </div>`)[0];
+                popup_3f27eebc160cd0f007477f6a26d5ef1d.setContent(html_437931d76b242404917b05444e505a57);
+            
+        
+
+        marker_046c454c85ad880f8255777a7522de22.bindPopup(popup_3f27eebc160cd0f007477f6a26d5ef1d)
+        ;
+
+        
+    
+    
+                marker_046c454c85ad880f8255777a7522de22.setIcon(icon_9210399e689862cceb0ef0a5aec5ec77);
+            
+    
+            var marker_16250c8637d9c0c363fbd79f66ac6c35 = L.marker(
+                [-1.601111, 103.49444],
+                {
+}
+            ).addTo(marker_cluster_1cbd6324cde533d3e1d47a565b5fb84d);
+        
+    
+            var icon_373537d974f614f020b94552547f339e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "cadetblue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b4bd23ad546a8edf1f026cf10f0bb233 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_2ecda1afe8705e83361872e3bf501f15 = $(`<div id="html_2ecda1afe8705e83361872e3bf501f15" style="width: 100.0%; height: 100.0%;">         <b>NO STASIUN:</b> 50009<br>         <b>DESA:</b> Sei<br>         <b>KECAMATAN:</b> Jambi Luar Kota<br>         <b>KAB/KOTA:</b> Muaro Jambi<br>         <b>PROVINSI:</b> Jambi     </div>`)[0];
+                popup_b4bd23ad546a8edf1f026cf10f0bb233.setContent(html_2ecda1afe8705e83361872e3bf501f15);
+            
+        
+
+        marker_16250c8637d9c0c363fbd79f66ac6c35.bindPopup(popup_b4bd23ad546a8edf1f026cf10f0bb233)
+        ;
+
+        
+    
+    
+                marker_16250c8637d9c0c363fbd79f66ac6c35.setIcon(icon_373537d974f614f020b94552547f339e);
+            
+    
+            var marker_2af68d1a7ba4032f10dc32dfe01d9590 = L.marker(
+                [-5.17226, 105.18037],
+                {
+}
+            ).addTo(marker_cluster_1cbd6324cde533d3e1d47a565b5fb84d);
+        
+    
+            var icon_8d4d3cd38ba3238bef3d7c2bc26a0e34 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkpurple",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5ed34850e933f0e4d241a299102c3a84 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_0c09f88c28a6fef1d0e2d83e190e65d9 = $(`<div id="html_0c09f88c28a6fef1d0e2d83e190e65d9" style="width: 100.0%; height: 100.0%;">         <b>NO STASIUN:</b> 50017<br>         <b>DESA:</b> Sidobasuki<br>         <b>KECAMATAN:</b> Tegineneng<br>         <b>KAB/KOTA:</b> Pesawaran<br>         <b>PROVINSI:</b> Lampung     </div>`)[0];
+                popup_5ed34850e933f0e4d241a299102c3a84.setContent(html_0c09f88c28a6fef1d0e2d83e190e65d9);
+            
+        
+
+        marker_2af68d1a7ba4032f10dc32dfe01d9590.bindPopup(popup_5ed34850e933f0e4d241a299102c3a84)
+        ;
+
+        
+    
+    
+                marker_2af68d1a7ba4032f10dc32dfe01d9590.setIcon(icon_8d4d3cd38ba3238bef3d7c2bc26a0e34);
+            
+    
+            var marker_395cb766030689fb3ffdedd1ad1d1e7f = L.marker(
+                [-2.5233, 106.4167],
+                {
+}
+            ).addTo(marker_cluster_1cbd6324cde533d3e1d47a565b5fb84d);
+        
+    
+            var icon_57b0152660072ce91865d6f74b412ea0 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "white",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_02a2584ba5e3599cb2f3c49bb2e277b2 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_32acee9160b107e0f3ec84de5081ea5b = $(`<div id="html_32acee9160b107e0f3ec84de5081ea5b" style="width: 100.0%; height: 100.0%;">         <b>NO STASIUN:</b> 50008<br>         <b>DESA:</b> Koba<br>         <b>KECAMATAN:</b> Koba<br>         <b>KAB/KOTA:</b> Bangka Tengah<br>         <b>PROVINSI:</b> Kepulauan Bangka Belitung     </div>`)[0];
+                popup_02a2584ba5e3599cb2f3c49bb2e277b2.setContent(html_32acee9160b107e0f3ec84de5081ea5b);
+            
+        
+
+        marker_395cb766030689fb3ffdedd1ad1d1e7f.bindPopup(popup_02a2584ba5e3599cb2f3c49bb2e277b2)
+        ;
+
+        
+    
+    
+                marker_395cb766030689fb3ffdedd1ad1d1e7f.setIcon(icon_57b0152660072ce91865d6f74b412ea0);
+            
+    
+            var marker_e39ef494d9772efac105186ebb3f2f4d = L.marker(
+                [-7.716165, 110.3354],
+                {
+}
+            ).addTo(marker_cluster_1cbd6324cde533d3e1d47a565b5fb84d);
+        
+    
+            var icon_02586c99a894544e026d2dfdee2bf987 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "pink",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d99a29abbf71ed4025733927c9090927 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_e2b114e8ef59f05c23f0f43db25a0630 = $(`<div id="html_e2b114e8ef59f05c23f0f43db25a0630" style="width: 100.0%; height: 100.0%;">         <b>NO STASIUN:</b> 50011<br>         <b>DESA:</b> Sendangadi<br>         <b>KECAMATAN:</b> Mlati<br>         <b>KAB/KOTA:</b> Sleman<br>         <b>PROVINSI:</b> DI Yogyakarta     </div>`)[0];
+                popup_d99a29abbf71ed4025733927c9090927.setContent(html_e2b114e8ef59f05c23f0f43db25a0630);
+            
+        
+
+        marker_e39ef494d9772efac105186ebb3f2f4d.bindPopup(popup_d99a29abbf71ed4025733927c9090927)
+        ;
+
+        
+    
+    
+                marker_e39ef494d9772efac105186ebb3f2f4d.setIcon(icon_02586c99a894544e026d2dfdee2bf987);
+            
+    
+            var marker_f9e70dd538159fc3d515e37417ac6cbe = L.marker(
+                [-3.46225, 114.84084],
+                {
+}
+            ).addTo(marker_cluster_1cbd6324cde533d3e1d47a565b5fb84d);
+        
+    
+            var icon_03f018eaffefb04f5a9d1c91695d5551 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "lightblue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_fda0d4cf902e5707007902ab0277d727 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_12626c6c3bf48ef8161f4b0d53f980b6 = $(`<div id="html_12626c6c3bf48ef8161f4b0d53f980b6" style="width: 100.0%; height: 100.0%;">         <b>NO STASIUN:</b> STI1004<br>         <b>DESA:</b> Sei. Besar<br>         <b>KECAMATAN:</b>  Banjarbaru Selatan<br>         <b>KAB/KOTA:</b> Kota Banjarbaru<br>         <b>PROVINSI:</b> Kalimantan Selatan     </div>`)[0];
+                popup_fda0d4cf902e5707007902ab0277d727.setContent(html_12626c6c3bf48ef8161f4b0d53f980b6);
+            
+        
+
+        marker_f9e70dd538159fc3d515e37417ac6cbe.bindPopup(popup_fda0d4cf902e5707007902ab0277d727)
+        ;
+
+        
+    
+    
+                marker_f9e70dd538159fc3d515e37417ac6cbe.setIcon(icon_03f018eaffefb04f5a9d1c91695d5551);
+            
+    
+            var marker_57dc4de497b9aa46e2e530ce52c61a7c = L.marker(
+                [-8.6364, 116.17049],
+                {
+}
+            ).addTo(marker_cluster_1cbd6324cde533d3e1d47a565b5fb84d);
+        
+    
+            var icon_447d2ae57e6096b73ddc2667770b46d3 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "lightgreen",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_833bcf9ba1578d0dce31fd6402e0b89b = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_7ec7c14d6ccea7581a7cbd45af9c29ab = $(`<div id="html_7ec7c14d6ccea7581a7cbd45af9c29ab" style="width: 100.0%; height: 100.0%;">         <b>NO STASIUN:</b> STI1005<br>         <b>DESA:</b> Montong Are<br>         <b>KECAMATAN:</b> Kediri<br>         <b>KAB/KOTA:</b> Lombok Barat<br>         <b>PROVINSI:</b> Nusa Tenggara Barat     </div>`)[0];
+                popup_833bcf9ba1578d0dce31fd6402e0b89b.setContent(html_7ec7c14d6ccea7581a7cbd45af9c29ab);
+            
+        
+
+        marker_57dc4de497b9aa46e2e530ce52c61a7c.bindPopup(popup_833bcf9ba1578d0dce31fd6402e0b89b)
+        ;
+
+        
+    
+    
+                marker_57dc4de497b9aa46e2e530ce52c61a7c.setIcon(icon_447d2ae57e6096b73ddc2667770b46d3);
+            
+    
+            var marker_d23074df6a31bcf564407cf0fb1cf675 = L.marker(
+                [-7.9013888888888895, 112.59666666666666],
+                {
+}
+            ).addTo(marker_cluster_1cbd6324cde533d3e1d47a565b5fb84d);
+        
+    
+            var icon_39446641ab79ae55a38b020d70b63c68 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "gray",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c5a79f4472d8c7634d72372f9cc8510a = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_936d782f1fe8e0d74772955334c69ee3 = $(`<div id="html_936d782f1fe8e0d74772955334c69ee3" style="width: 100.0%; height: 100.0%;">         <b>NO STASIUN:</b> STI1002<br>         <b>DESA:</b> Ngijo<br>         <b>KECAMATAN:</b> Karang Ploso<br>         <b>KAB/KOTA:</b> Malang<br>         <b>PROVINSI:</b> Jawa Timur     </div>`)[0];
+                popup_c5a79f4472d8c7634d72372f9cc8510a.setContent(html_936d782f1fe8e0d74772955334c69ee3);
+            
+        
+
+        marker_d23074df6a31bcf564407cf0fb1cf675.bindPopup(popup_c5a79f4472d8c7634d72372f9cc8510a)
+        ;
+
+        
+    
+    
+                marker_d23074df6a31bcf564407cf0fb1cf675.setIcon(icon_39446641ab79ae55a38b020d70b63c68);
+            
+    
+            var marker_bbbe8cf784fb3b5489332a5b8e89225b = L.marker(
+                [-8.3444, 114.8274],
+                {
+}
+            ).addTo(marker_cluster_1cbd6324cde533d3e1d47a565b5fb84d);
+        
+    
+            var icon_7f68b4fc40f8488238b242aca9aac3ba = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "black",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_55f3b731fbcfef8d9a5de3c3506cd603 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_43ac6d26dd7ca49e49108586be35370c = $(`<div id="html_43ac6d26dd7ca49e49108586be35370c" style="width: 100.0%; height: 100.0%;">         <b>NO STASIUN:</b> STI1001<br>         <b>DESA:</b> Desa BB Agung<br>         <b>KECAMATAN:</b> Negara<br>         <b>KAB/KOTA:</b> Jembrana<br>         <b>PROVINSI:</b> Bali     </div>`)[0];
+                popup_55f3b731fbcfef8d9a5de3c3506cd603.setContent(html_43ac6d26dd7ca49e49108586be35370c);
+            
+        
+
+        marker_bbbe8cf784fb3b5489332a5b8e89225b.bindPopup(popup_55f3b731fbcfef8d9a5de3c3506cd603)
+        ;
+
+        
+    
+    
+                marker_bbbe8cf784fb3b5489332a5b8e89225b.setIcon(icon_7f68b4fc40f8488238b242aca9aac3ba);
+            
+    
+            var marker_ab5e583008cc634d8a2575759468641a = L.marker(
+                [-10.139, 123.6669],
+                {
+}
+            ).addTo(marker_cluster_1cbd6324cde533d3e1d47a565b5fb84d);
+        
+    
+            var icon_1bbd0f9a332194fe502f0f2c8b533b56 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_08e2c03ffc9c668b6c2aaa34145f5a38 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_6dc1435a571850a3b1159d32a85db6a3 = $(`<div id="html_6dc1435a571850a3b1159d32a85db6a3" style="width: 100.0%; height: 100.0%;">         <b>NO STASIUN:</b> 50004<br>         <b>DESA:</b> Lasiana<br>         <b>KECAMATAN:</b> Kelapa Lima<br>         <b>KAB/KOTA:</b> Kota Kupang<br>         <b>PROVINSI:</b> Nusa Tenggara Timur     </div>`)[0];
+                popup_08e2c03ffc9c668b6c2aaa34145f5a38.setContent(html_6dc1435a571850a3b1159d32a85db6a3);
+            
+        
+
+        marker_ab5e583008cc634d8a2575759468641a.bindPopup(popup_08e2c03ffc9c668b6c2aaa34145f5a38)
+        ;
+
+        
+    
+    
+                marker_ab5e583008cc634d8a2575759468641a.setIcon(icon_1bbd0f9a332194fe502f0f2c8b533b56);
+            
+    
+            var marker_3877b582197795a29769d3e19704969f = L.marker(
+                [-4.945933, 119.578793],
+                {
+}
+            ).addTo(marker_cluster_1cbd6324cde533d3e1d47a565b5fb84d);
+        
+    
+            var icon_9cf0972cbf4cc120aa8b224f60c1ce63 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b849f09749ee59ba649582b8c5172393 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_266b2750aa5c8cd293ab96a4389eb89b = $(`<div id="html_266b2750aa5c8cd293ab96a4389eb89b" style="width: 100.0%; height: 100.0%;">         <b>NO STASIUN:</b> 50020<br>         <b>DESA:</b> Baju Bodoa <br>         <b>KECAMATAN:</b> Maros Baru<br>         <b>KAB/KOTA:</b> Maros<br>         <b>PROVINSI:</b> Sulawesi Selatan     </div>`)[0];
+                popup_b849f09749ee59ba649582b8c5172393.setContent(html_266b2750aa5c8cd293ab96a4389eb89b);
+            
+        
+
+        marker_3877b582197795a29769d3e19704969f.bindPopup(popup_b849f09749ee59ba649582b8c5172393)
+        ;
+
+        
+    
+    
+                marker_3877b582197795a29769d3e19704969f.setIcon(icon_9cf0972cbf4cc120aa8b224f60c1ce63);
+            
+    
+            var marker_08af80af80e119a4cb73b57af5312c30 = L.marker(
+                [1.4983333333333333, 124.89833333333334],
+                {
+}
+            ).addTo(marker_cluster_1cbd6324cde533d3e1d47a565b5fb84d);
+        
+    
+            var icon_0a564a8a87edbd4832ccc936a1094a93 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a5183a62ad87b9172b805b4b97c04fd1 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ada6de8292c2668eed0ab8aaf19946d7 = $(`<div id="html_ada6de8292c2668eed0ab8aaf19946d7" style="width: 100.0%; height: 100.0%;">         <b>NO STASIUN:</b> STI1006<br>         <b>DESA:</b> Paniki Atas<br>         <b>KECAMATAN:</b> Talawaan<br>         <b>KAB/KOTA:</b> Minahasa Utara<br>         <b>PROVINSI:</b> Sulawesi Utara     </div>`)[0];
+                popup_a5183a62ad87b9172b805b4b97c04fd1.setContent(html_ada6de8292c2668eed0ab8aaf19946d7);
+            
+        
+
+        marker_08af80af80e119a4cb73b57af5312c30.bindPopup(popup_a5183a62ad87b9172b805b4b97c04fd1)
+        ;
+
+        
+    
+    
+                marker_08af80af80e119a4cb73b57af5312c30.setIcon(icon_0a564a8a87edbd4832ccc936a1094a93);
+            
+    
+            var marker_39e915adf018f5d3c6bac94f197f075f = L.marker(
+                [-3.338809, 128.368445],
+                {
+}
+            ).addTo(marker_cluster_1cbd6324cde533d3e1d47a565b5fb84d);
+        
+    
+            var icon_0f4aec3aa0c4cddd14d57ac022dd198b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7fe068529e370826dded47f5a5f4d448 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_8686aad439da3d4617a7eaf21585abfd = $(`<div id="html_8686aad439da3d4617a7eaf21585abfd" style="width: 100.0%; height: 100.0%;">         <b>NO STASIUN:</b> 50007<br>         <b>DESA:</b> Kairatu<br>         <b>KECAMATAN:</b> Kairatu<br>         <b>KAB/KOTA:</b> Seram Bagian Barat<br>         <b>PROVINSI:</b> Maluku     </div>`)[0];
+                popup_7fe068529e370826dded47f5a5f4d448.setContent(html_8686aad439da3d4617a7eaf21585abfd);
+            
+        
+
+        marker_39e915adf018f5d3c6bac94f197f075f.bindPopup(popup_7fe068529e370826dded47f5a5f4d448)
+        ;
+
+        
+    
+    
+                marker_39e915adf018f5d3c6bac94f197f075f.setIcon(icon_0f4aec3aa0c4cddd14d57ac022dd198b);
+            
+    
+            var marker_3b16395772aac0a87c9faa0eb20fce93 = L.marker(
+                [0.55, 123.14],
+                {
+}
+            ).addTo(marker_cluster_1cbd6324cde533d3e1d47a565b5fb84d);
+        
+    
+            var icon_b63d3984d45e1aefffc5573a100a9b5c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_47f1d25ada0439a8ecb11ec5f253fc94 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_f435446148f1040e3d45bbab7b297d18 = $(`<div id="html_f435446148f1040e3d45bbab7b297d18" style="width: 100.0%; height: 100.0%;">         <b>NO STASIUN:</b> 50001<br>         <b>DESA:</b> Moutong<br>         <b>KECAMATAN:</b> Tilongkabila<br>         <b>KAB/KOTA:</b> Bone Bolango<br>         <b>PROVINSI:</b> Gorontalo     </div>`)[0];
+                popup_47f1d25ada0439a8ecb11ec5f253fc94.setContent(html_f435446148f1040e3d45bbab7b297d18);
+            
+        
+
+        marker_3b16395772aac0a87c9faa0eb20fce93.bindPopup(popup_47f1d25ada0439a8ecb11ec5f253fc94)
+        ;
+
+        
+    
+    
+                marker_3b16395772aac0a87c9faa0eb20fce93.setIcon(icon_b63d3984d45e1aefffc5573a100a9b5c);
+            
+    
+            var marker_94252266533ccef8a122ab962517778c = L.marker(
+                [-4.056219, 122.449164],
+                {
+}
+            ).addTo(marker_cluster_1cbd6324cde533d3e1d47a565b5fb84d);
+        
+    
+            var icon_1953e8e963077a51eefdb513b43f1c5c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkred",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_396a754146da90aca1f125b012078e9f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ed32476ed885611101e15a911ce39dad = $(`<div id="html_ed32476ed885611101e15a911ce39dad" style="width: 100.0%; height: 100.0%;">         <b>NO STASIUN:</b> 50012<br>         <b>DESA:</b> Ronooha<br>         <b>KECAMATAN:</b> Ranomeeto<br>         <b>KAB/KOTA:</b> Konawe Selatan<br>         <b>PROVINSI:</b> Sulawesi Tenggara     </div>`)[0];
+                popup_396a754146da90aca1f125b012078e9f.setContent(html_ed32476ed885611101e15a911ce39dad);
+            
+        
+
+        marker_94252266533ccef8a122ab962517778c.bindPopup(popup_396a754146da90aca1f125b012078e9f)
+        ;
+
+        
+    
+    
+                marker_94252266533ccef8a122ab962517778c.setIcon(icon_1953e8e963077a51eefdb513b43f1c5c);
+            
+    
+            var marker_1c767c383b6c9af1ceecebdd93b9ac9f = L.marker(
+                [-2.5925, 140.1678],
+                {
+}
+            ).addTo(marker_cluster_1cbd6324cde533d3e1d47a565b5fb84d);
+        
+    
+            var icon_cfdf86eea945809f0e5290e31080437b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "lightred",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e5686ebca122aa452a5ab16df50757e8 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_439549d836580e6381509aa423588e79 = $(`<div id="html_439549d836580e6381509aa423588e79" style="width: 100.0%; height: 100.0%;">         <b>NO STASIUN:</b> 50005<br>         <b>DESA:</b> Kwase<br>         <b>KECAMATAN:</b> Nimboran<br>         <b>KAB/KOTA:</b> Jayapura<br>         <b>PROVINSI:</b> Papua     </div>`)[0];
+                popup_e5686ebca122aa452a5ab16df50757e8.setContent(html_439549d836580e6381509aa423588e79);
+            
+        
+
+        marker_1c767c383b6c9af1ceecebdd93b9ac9f.bindPopup(popup_e5686ebca122aa452a5ab16df50757e8)
+        ;
+
+        
+    
+    
+                marker_1c767c383b6c9af1ceecebdd93b9ac9f.setIcon(icon_cfdf86eea945809f0e5290e31080437b);
+            
+    
+            var marker_845b9c84904e38a47255e359a662eed8 = L.marker(
+                [-1.479, 134.138],
+                {
+}
+            ).addTo(marker_cluster_1cbd6324cde533d3e1d47a565b5fb84d);
+        
+    
+            var icon_28499a2617cd43bc732164984ebb174f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "beige",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a5e67d141c1f1349bcf5cb2eaaaad11c = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_9ef6e2870db72bef3c141d2c316a5691 = $(`<div id="html_9ef6e2870db72bef3c141d2c316a5691" style="width: 100.0%; height: 100.0%;">         <b>NO STASIUN:</b> 50014<br>         <b>DESA:</b> Ransiki<br>         <b>KECAMATAN:</b> Ransiki<br>         <b>KAB/KOTA:</b> Manokwari Selatan<br>         <b>PROVINSI:</b> Papua Barat     </div>`)[0];
+                popup_a5e67d141c1f1349bcf5cb2eaaaad11c.setContent(html_9ef6e2870db72bef3c141d2c316a5691);
+            
+        
+
+        marker_845b9c84904e38a47255e359a662eed8.bindPopup(popup_a5e67d141c1f1349bcf5cb2eaaaad11c)
+        ;
+
+        
+    
+    
+                marker_845b9c84904e38a47255e359a662eed8.setIcon(icon_28499a2617cd43bc732164984ebb174f);
+            
+    
+            var marker_fd41ad866cabefcb939be088868e38a7 = L.marker(
+                [-8.38709, 140.5165],
+                {
+}
+            ).addTo(marker_cluster_1cbd6324cde533d3e1d47a565b5fb84d);
+        
+    
+            var icon_aac0ae901a8accdc59a5c230f598cf31 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkblue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_1c9fa8328d1703798b8eac41ba439bf4 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_381477770d4b7d4e6c547820941d5d46 = $(`<div id="html_381477770d4b7d4e6c547820941d5d46" style="width: 100.0%; height: 100.0%;">         <b>NO STASIUN:</b> 50013<br>         <b>DESA:</b> Garsa Mulya<br>         <b>KECAMATAN:</b> Tanah Miring<br>         <b>KAB/KOTA:</b> Merauke<br>         <b>PROVINSI:</b> Papua Selatan     </div>`)[0];
+                popup_1c9fa8328d1703798b8eac41ba439bf4.setContent(html_381477770d4b7d4e6c547820941d5d46);
+            
+        
+
+        marker_fd41ad866cabefcb939be088868e38a7.bindPopup(popup_1c9fa8328d1703798b8eac41ba439bf4)
+        ;
+
+        
+    
+    
+                marker_fd41ad866cabefcb939be088868e38a7.setIcon(icon_aac0ae901a8accdc59a5c230f598cf31);
+            
+    
+            marker_cluster_1cbd6324cde533d3e1d47a565b5fb84d.addTo(map_e097e3933e49e9119e2a976d9ec0f928);
+        
+    
+            tile_layer_6feffdcf572befaa8d58edd018b2e3df.addTo(map_e097e3933e49e9119e2a976d9ec0f928);
+        
+    
+                marker_d76524420a9b783f53dd902d61b77590.setIcon(icon_fcbd34f9e8ff51614610f7fcaa977189);
+            
+    
+                marker_389d5cdfddc651947275a9818d2aaee8.setIcon(icon_3061d48011e1d6be1d1c969d9d479810);
+            
+    
+                marker_0e273ea808b572ce1c695caa5f47a630.setIcon(icon_3b81957946065bc459e4a06bae89c4c9);
+            
+    
+                marker_fd2560b7c30012fa5eeb8227f2be8686.setIcon(icon_31840c05544c95d31e21abe75efad543);
+            
+    
+                marker_5d583365cd56491d9a209e754e23c7a7.setIcon(icon_6d278287f9e6fed248bf8ef452a3383f);
+            
+    
+                marker_d11526a5f7f9699a4196cc40e2126323.setIcon(icon_28ec1ed43f0b8912b77afd9954267967);
+            
+    
+                marker_4a682e24afd5d00d257823c79017b9b8.setIcon(icon_324766a24bced23b6dfbbfa5e7f0be44);
+            
+    
+                marker_45c336dafd91eed0a7a4b715d3a322f9.setIcon(icon_2942a4080c02cde5521b6c153f825227);
+            
+    
+                marker_d5c9ae6f62063f2cb94d78755fa7749e.setIcon(icon_d132ba1a84aafc8818e19baf2f7a0577);
+            
+    
+                marker_046c454c85ad880f8255777a7522de22.setIcon(icon_9210399e689862cceb0ef0a5aec5ec77);
+            
+    
+                marker_16250c8637d9c0c363fbd79f66ac6c35.setIcon(icon_373537d974f614f020b94552547f339e);
+            
+    
+                marker_2af68d1a7ba4032f10dc32dfe01d9590.setIcon(icon_8d4d3cd38ba3238bef3d7c2bc26a0e34);
+            
+    
+                marker_395cb766030689fb3ffdedd1ad1d1e7f.setIcon(icon_57b0152660072ce91865d6f74b412ea0);
+            
+    
+                marker_e39ef494d9772efac105186ebb3f2f4d.setIcon(icon_02586c99a894544e026d2dfdee2bf987);
+            
+    
+                marker_f9e70dd538159fc3d515e37417ac6cbe.setIcon(icon_03f018eaffefb04f5a9d1c91695d5551);
+            
+    
+                marker_57dc4de497b9aa46e2e530ce52c61a7c.setIcon(icon_447d2ae57e6096b73ddc2667770b46d3);
+            
+    
+                marker_d23074df6a31bcf564407cf0fb1cf675.setIcon(icon_39446641ab79ae55a38b020d70b63c68);
+            
+    
+                marker_bbbe8cf784fb3b5489332a5b8e89225b.setIcon(icon_7f68b4fc40f8488238b242aca9aac3ba);
+            
+    
+                marker_ab5e583008cc634d8a2575759468641a.setIcon(icon_1bbd0f9a332194fe502f0f2c8b533b56);
+            
+    
+                marker_3877b582197795a29769d3e19704969f.setIcon(icon_9cf0972cbf4cc120aa8b224f60c1ce63);
+            
+    
+                marker_08af80af80e119a4cb73b57af5312c30.setIcon(icon_0a564a8a87edbd4832ccc936a1094a93);
+            
+    
+                marker_39e915adf018f5d3c6bac94f197f075f.setIcon(icon_0f4aec3aa0c4cddd14d57ac022dd198b);
+            
+    
+                marker_3b16395772aac0a87c9faa0eb20fce93.setIcon(icon_b63d3984d45e1aefffc5573a100a9b5c);
+            
+    
+                marker_94252266533ccef8a122ab962517778c.setIcon(icon_1953e8e963077a51eefdb513b43f1c5c);
+            
+    
+                marker_1c767c383b6c9af1ceecebdd93b9ac9f.setIcon(icon_cfdf86eea945809f0e5290e31080437b);
+            
+    
+                marker_845b9c84904e38a47255e359a662eed8.setIcon(icon_28499a2617cd43bc732164984ebb174f);
+            
+    
+                marker_fd41ad866cabefcb939be088868e38a7.setIcon(icon_aac0ae901a8accdc59a5c230f598cf31);
+            
+    
+            marker_cluster_1cbd6324cde533d3e1d47a565b5fb84d.addTo(map_e097e3933e49e9119e2a976d9ec0f928);
+        
+</script>
+</html>
